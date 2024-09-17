@@ -1,0 +1,6 @@
+@use 'config';
+@use 'main';
+
+header{
+    background-color: config.$color04;
+}

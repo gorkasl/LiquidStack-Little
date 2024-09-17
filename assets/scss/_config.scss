@@ -1,0 +1,53 @@
+// Hoja para los estilos de configuración iniciales
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'anton';
+    src: url('../fonts/Anton-Regular.ttf');
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+
+
+$tablet: 750px;
+$desktop: 1350px;
+
+$color00: white;
+$color01: rgb(35, 35, 35);
+$color02: rgb(223, 91, 230);
+$color03: rgb(139, 230, 148);
+$color04: rgb(142, 142, 232);
+
+$fuente01: 'anton';
+$fuente02: 'poppins';
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: clamp(2rem, 5vw, 6rem);
+    font-weight: bold;
+    font-family: $fuente01;
+    letter-spacing: 2px;
+}
+
+p{
+    font-family: $fuente02;
+    font-size: clamp(0.9rem,3vw,1.5rem);
+}
+
+  

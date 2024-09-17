@@ -1,0 +1,7 @@
+// Estilos que sólo aparecen en la página de inicio
+@use 'config';
+@use 'main';
+
+header{
+    background-color: config.$color02;    
+} 
