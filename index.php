@@ -8,17 +8,38 @@
 </head>
 <body>
 
-    <!-- 1 Esto es un comentario fuera de php -->
     <?php
-        // 2 Esto imprime el html de ese archivo
         include './php/_nav.php';
     ?>
-    <!-- 3 esto es otrpo comentario en html -->
     
     <header>
         <h1>PÁGINA DE INICIO</h1>
         <div>
-            <p>Contenido exclusivo de la página de inicio</p>
+            <p>Imprimir con ECHO desde php</p>
+            <code>
+                <?php
+                echo "Hola Mundo";
+                ?>
+            </code>
+
+            <p>Una operación desde PHP</p>
+            <code>
+                <?php
+                $a = 10;
+                $b = 5;
+                $total = ($a * $b)-10;
+                echo 'El total es: '.$total;
+                ?>
+            </code>
+
+            <p>Una iteración</p>
+            <code>
+                <?php
+                for ($x = 0; $x <= 10; $x++) {
+                    echo "The number is: $x <br>";
+                }
+                ?>
+            </code>
         </div>
     </header> 
     

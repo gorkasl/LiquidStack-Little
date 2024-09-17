@@ -49,5 +49,12 @@ p{
     font-family: $fuente02;
     font-size: clamp(0.9rem,3vw,1.5rem);
 }
+code{
+    width: 100%;
+    padding: 1.5rem;
+    background-color: $color01;
+    font-size: 2rem;
+    color: rgb(157, 232, 45);
+}
 
   
