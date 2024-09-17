@@ -6,14 +6,13 @@
     <title>PÁGINA DE SERVICIOS CON CONTENIDO DINÁMICO EN PHP</title>
     <link rel="stylesheet" href="./assets/css/servicios.min.css">
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./servicios.html">SERVICIOS</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
-        </ul>
-    </nav>
+<body>   
+
+    <?php
+        // Esto imprime el html de ese archivo
+        include './php/_nav.php';
+    ?>
+    
     <header>
         <h1>PÁGINA DE SERVICIOS</h1>
         <div>            

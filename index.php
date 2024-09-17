@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="./assets/css/inicio.min.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./servicios.html">SERVICIOS</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
-        </ul>
-    </nav>
+
+    <!-- 1 Esto es un comentario fuera de php -->
+    <?php
+        // 2 Esto imprime el html de ese archivo
+        include './php/_nav.php';
+    ?>
+    <!-- 3 esto es otrpo comentario en html -->
+    
     <header>
         <h1>PÁGINA DE INICIO</h1>
         <div>
             <p>Contenido exclusivo de la página de inicio</p>
         </div>
-    </header>    
+    </header> 
+    
 </body>
 </html>

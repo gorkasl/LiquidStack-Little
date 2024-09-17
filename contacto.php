@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="./assets/css/contacto.min.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./servicios.html">SERVICIOS</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
-        </ul>
-    </nav>
+    
+    <?php
+        // Esto imprime el html de ese archivo
+        include './php/_nav.php';
+    ?>
+
     <header>
         <h1>PÁGINA DE CONTACTO</h1>
         <div>
