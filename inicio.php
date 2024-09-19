@@ -36,7 +36,7 @@
             <code>
                 <?php
                 for ($x = 0; $x <= 10; $x++) {
-                    echo "The number is: $x <br>";
+                    echo "El número de esta vuelta es: $x <br>";
                 }
                 ?>
             </code>

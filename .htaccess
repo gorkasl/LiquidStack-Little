@@ -10,7 +10,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 
 #epresión regular para que, cualquier url que escriba el usuario en mi dominio sea redirigida al index,
 #pero enviando una variable GET la URL en sí, para que en el index sea captada y analizada.
-RewriteRule ^(.*)$  index.php?url=$1 [QSA]
+RewriteRule ^(.*) index.php?url=$1 [QSA]
 
 # ^inicio de cadena
 # $ fin de cadena
