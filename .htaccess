@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Si las siguientes condiciones son verdaderas, entonces redireccionamos la URL:
+# Si el nombre de fichero solicitado no es un directorio,
+RewriteCond %{REQUEST_FILENAME} !-d
+# Y además, si el nombre de fichero solicitado no es un archivo que 
+# ya exista (podría existir a nivel de servidor lo que estés buscando por la URL)
+RewriteCond %{REQUEST_FILENAME} !-f
+
+
+#epresión regular para que, cualquier url que escriba el usuario en mi dominio sea redirigida al index,
+#pero enviando una variable GET la URL en sí, para que en el index sea captada y analizada.
+RewriteRule ^(.*)$  index.php?url=$1 [QSA]
+
+# ^inicio de cadena
+# $ fin de cadena
+# () entre paréntesis la expresión regular

@@ -6,7 +6,6 @@
     <title>PÁGINA DE SERVICIOS CON CONTENIDO DINÁMICO EN PHP</title>
     <link rel="stylesheet" href="./assets/css/servicios.min.css">
 </head>
-<body>   
 
     <?php
         // Esto imprime el html de ese archivo
