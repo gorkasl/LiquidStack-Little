@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PÁGINA DE SERVICIOS CON CONTENIDO DINÁMICO EN PHP</title>
-    <link rel="stylesheet" href="./assets/css/servicios.min.css">
+    <link rel="stylesheet" href="<?=$_ENV['RAIZ']?>/assets/css/servicios.min.css">
 </head>
 
     <?php
@@ -16,7 +16,7 @@
         <h1>PÁGINA DE SERVICIOS</h1>
         <div>            
             <p>Contenido exclusivo de la página de servicios</p>
-        </div>
+        </div>       
     </header>
 </body>
 </html>
