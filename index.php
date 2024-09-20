@@ -7,6 +7,7 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable('./');
 $dotenv->load();
 
+//desde el htaccess entramos aquí desde cualquier dirección URL del dominio. Aquí la recogemos íntegra (sólo lo que venga detrás del último / localhost), ya que venimos desde el localhost ejecutado desde php, en el puerto 3000.
 $url = $_SERVER["REQUEST_URI"] ?? 'inicio';
 
 
