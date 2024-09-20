@@ -14,6 +14,7 @@
     ?>
     
     <header>
+        <!-- Esta vista se ha cargado pero con variables de contenido dinámico de nuestro array (variables sobre variables con extract de php) -->
         <h1><?=$title?></h1>
         <div>            
         <?=$description?>
