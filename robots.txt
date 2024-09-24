@@ -1,0 +1,4 @@
+Sitemap: https://alm-area.com/lanbide2024/igor/sitemap.xml
+User-agent: *
+Disallow: /cgi-bin
+Disallow: /php

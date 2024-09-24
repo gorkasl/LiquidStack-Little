@@ -1,6 +1,58 @@
 @use 'config';
 @use 'main';
 
-header{
-    background-color: config.$color03;
+
+.art03{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    >:nth-child(1){
+        order: 1;
+        width: 100%;
+        @media only screen and (min-width: config.$tablet){
+            &{
+                width: 45%;
+                order: 0;
+                height: 500px;
+                border-radius: 10px;
+            }
+        }
+    }
+    >:nth-child(2){
+        width: 100%;
+        padding: config.$padMin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 2rem;
+        @media only screen and (min-width: config.$tablet){
+            &{
+                width: 45%;
+            }
+        }
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            row-gap: 1.5rem;
+            input, textarea{
+                width: 100%;
+                padding: 1rem;
+                border-radius: 5px;
+                border: none;
+            }
+            textarea{
+                height: 100px;
+                min-height: 100px;
+                max-height: 300px;
+            }
+        }
+    }
 }

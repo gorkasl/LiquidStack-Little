@@ -1,0 +1,22 @@
+/* TEAM */
+              Position: Webda Desarrollo de páginas web y posicionamiento SEO
+              Name: Liquid Art Developers
+              From: Donostia, Gipuzkoa
+              Site: info@webda.eus
+              Twitter: @liquidartdev
+              Since: 2024-07-09
+              
+              
+/* SITE */
+              Last update: 2023/07/02 08:22
+              Language: English
+              Doctype: HTML5 with CSS3
+              Tools: PHP, PHP SERVER, SASS, JAVASCRIPT etc.
+              IDE: IDE used to develop your site
+              Components: Javascript, jQuery, Canvas, etc.
+			  
+
+							
+/* THANKS */
+
+              Name: https://alm-area.com/lanbide2024/igor/

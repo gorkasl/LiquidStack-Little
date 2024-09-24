@@ -1,0 +1,41 @@
+@use 'config';
+@use 'main';
+
+.header01{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    >:nth-child(1){
+        order: 1;
+        @media only screen and (min-width: config.$tablet){
+            &{
+                order: 0;
+            }
+        }
+    }
+    >:nth-child(2){
+        width: 100%;
+        padding: config.$padMin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 2rem;
+        @media only screen and (min-width: config.$tablet){
+            &{
+                width: 50%;
+                background-color: rebeccapurple;
+            }
+        }
+        h1{
+            width: 100%;
+            text-align: left;
+        }
+    }
+}
+

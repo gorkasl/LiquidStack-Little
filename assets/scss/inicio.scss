@@ -1,7 +1,194 @@
-// Estilos que sólo aparecen en la página de inicio
 @use 'config';
 @use 'main';
 
 header{
-    background-color: config.$color02;    
-} 
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    background-image: url('https://dummyimage.com/800x1200');
+    background-size: cover;
+    background-position: center center;
+    @media only screen and (min-width:config.$tablet){
+        &{
+            background-image: url('https://dummyimage.com/1350x900');
+        }
+    }
+    @media only screen and (min-width:config.$desktop){
+        &{
+            background-image: url('https://dummyimage.com/1920x1200');
+        }
+    }
+    h1{
+        font-size: 3rem;
+        color: config.$color00;
+        text-align: center;
+        @media only screen and (min-width:config.$tablet){
+            &{
+                font-size: 4rem;
+            }
+        }
+        @media only screen and (min-width:config.$desktop){
+            &{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+.sect01{
+    padding: 10rem 0;    
+    >:nth-child(2){
+        width: 100%;
+        padding: 0 config.$padMin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 2rem;
+    }
+}
+
+.sect02{
+    .art08{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        article{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            &:hover >:nth-child(2) picture img{
+                filter: invert(43%) sepia(84%) saturate(0%) hue-rotate(319deg) brightness(93%) contrast(92%);
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+            }
+            >:nth-child(1){
+                width: 100%;
+                height: 100vw;
+                padding: config.$padMax;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                row-gap: 2rem;
+                @media only screen and (min-width:config.$tablet){
+                    &{
+                        width: 50%;
+                        height: 50vw;                        
+                        padding: 10vw;
+                        row-gap: 4rem;
+                    }
+                }
+                @media only screen and (min-width:config.$desktop){
+                    &{                      
+                        padding: 15vw;
+                        row-gap: 8rem;
+                    }
+                }
+            }
+            >:nth-child(2){
+                width: 100%;
+                height: 100vw;
+                overflow: hidden;
+                @media only screen and (min-width:config.$tablet){
+                    &{
+                        width: 50%;
+                        height: 50vw;
+                    }
+                }            
+                picture{                
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                        filter: invert(43%) sepia(84%) saturate(1196%) hue-rotate(319deg) brightness(93%) contrast(92%);
+                        transition: 1s ease-in-out;                    
+                    }
+                }
+            }
+        }
+        @media only screen and (min-width:config.$tablet){
+            &{
+                >:nth-child(2){
+                    >:nth-child(1){
+                        order: 1;
+                    }
+                    >:nth-child(2){
+                        order: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.art02{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap:1rem;
+    @media only screen and (min-width:config.$desktop) {
+        &{
+            width: 80%;
+        }
+    }
+    h3, >p{
+        padding: 0 config.$padMin;
+        @media only screen and (min-width:config.$tablet) {
+            &{
+                width: 80%;
+            }
+        }
+    }
+    .matrix3{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+        @media only screen and (min-width:config.$desktop){
+            &{
+                justify-content: space-between;
+            }
+        }
+        >div{
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            @media only screen and (min-width:config.$tablet){
+                &{
+                    width: 45%;
+                    max-width: 800px;
+                }
+            }
+            @media only screen and (min-width:config.$desktop){
+                &{
+                    width: 32%;
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: .5s;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
+

@@ -1,59 +1,108 @@
-// Hoja para los estilos de configuración iniciales
-* {
+/* meto los estilos de reseteo y las variables, fuentes y acotadores de tags genéricos, body, y resto de tags principales */
+
+*{
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
 }
-
-@font-face {
-    font-family: 'anton';
-    src: url('../fonts/Anton-Regular.ttf');
-}
-@font-face {
-    font-family: 'poppins';
-    src: url('../fonts/Poppins-Regular.ttf');
+html{
+    scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'bebas';
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+@font-face {
+    font-family: 'spartan';
+    src: url('../fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
 
-
-$tablet: 750px;
-$desktop: 1350px;
+$fuente01: 'bebas';
+$fuente02: 'spartan';
 
 $color00: white;
-$color01: rgb(35, 35, 35);
-$color02: rgb(223, 91, 230);
-$color03: rgb(139, 230, 148);
-$color04: rgb(142, 142, 232);
+$color01: rgb(63, 63, 63);
+$color01bis: rgb(37, 37, 37);
+$color01rgba: rgba(29, 29, 29, 0.5);
+$color02: #e5556a;
 
-$fuente01: 'anton';
-$fuente02: 'poppins';
+$tablet: 800px;
+$desktop: 1350px;
 
+$anchoMedio: 80%;
+$anchoCorto: 60%;
+$anchoMini: 40%;
 
+$padMin: 1.5rem;
+$padMax: 4rem;
+
+nav, header, main, footer, section, article{
+    width: 100%;
+    max-width: 2560px;
+}
+body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: $color01;
+}
+section, main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+section{
+    row-gap: 3rem;
+    padding: 30vh 0;
+    
+}
+
+/* estilos de encabezados, textos y listas */
 a{
     text-decoration: none;
-    color: inherit;
 }
-ul{
+ul{ 
     list-style: none;
 }
-
+h1, h2, h3, h4{
+    font-family: $fuente01; 
+    color: $color00;
+    letter-spacing: 4px;
+}
 h1{
-    font-size: clamp(2rem, 5vw, 6rem);
-    font-weight: bold;
-    font-family: $fuente01;
-    letter-spacing: 2px;
+    font-size: clamp(1rem, 4vw, 5rem);
+}
+h2{
+    font-size: clamp(2rem, 5vw, 7rem);
+}
+h3{
+    font-size: clamp(1rem, 3vw, 3rem);
+}
+a, p, span, input, textarea{
+    font-family: $fuente02;
+    color: $color00;
+    font-size: clamp(14px, 3vw, 1.1rem);
+}
+p{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+input, textarea{    
+    border: none;
+}
+textarea{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
 }
 
-p{
-    font-family: $fuente02;
-    font-size: clamp(0.9rem,3vw,1.5rem);
-}
-code{
-    width: 100%;
-    padding: 1.5rem;
-    background-color: $color01;
-    font-size: 2rem;
-    color: rgb(157, 232, 45);
-}
 

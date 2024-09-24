@@ -1,13 +1,31 @@
 {
     "posicionamiento-seo":{
         "title": "POSICIONAMIENTO SEO",
-        "description":"Ofrecemos servicios SEO"
+        "description":"El mejor posicionamiento SEO para tu web o aplicación. Somos profesionales en posicionamiento web orgánico."
     },
-    "desarrollo-web":{
-        "title":"DESARROLLO WEB",
-        "description" : "Ofrecemos servicios web"
+    "aplicaciones-multiplataforma":{
+        "title":"DESARROLLO DE APLICACIONES MULTIPLATAFORMA",
+        "description":"Desarrollamos aplicaciones móviles multiplataforma. Qué necesitas, nosotros lo hacemos."
+    },
+    "desarrollo-web-nativo":{
+        "title":"DESARROLLO WEB NATIVO Y WORDPRESS",
+        "description":"Ofrecemos los servicios de desarrollo web nativo y en wordpress (CMS). El desarrollo natiuvo implica webs con más capacidad y rendimiento. Llegamos allí donde llegue tu necesidad."
+    },
+    "diseño-imagen-corporativa":{
+        "title":"DISEÑO IMAGEN CORPORATIVA CORPORATIVO",
+        "description":"Ofrecemos diferentes servicios de diseño gráfico"
+    },
+    "marketing-rrss-sem":{
+        "title":"MARKETING DIGITAL, RRSS Y CAMPAÑAS SEM",
+        "description":"Ofrecemos llevar tu campaña SEM, redes sociales y marketing corporativo para llevar tu empresa al conocimiento de todos tus clientes objetivo."
     },
     "inicio":{
+        
+    },
+    "servicios-web":{
+        
+    },
+    "contactar":{
         
     }
 }
