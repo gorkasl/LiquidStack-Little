@@ -8,6 +8,8 @@ return[
     '/servicios-web/aplicaciones-multiplataforma' => './php/vistas/servicio.php',
     '/servicios-web/desarrollo-web-nativo' => './php/vistas/servicio.php',
     '/servicios-web/marketing-rrss-sem' => './php/vistas/servicio.php',
-    '/servicios-web/diseño-imagen-corporativa' => './php/vistas/servicio.php'
+    '/servicios-web/diseño-imagen-corporativa' => './php/vistas/servicio.php',
+    '/servicios-web/diseño-imagen-corporativa/logotipos' => './php/vistas/servicio.php',
+    '/contact' => './php/vistas/contacto.php',
 ];
 ?>

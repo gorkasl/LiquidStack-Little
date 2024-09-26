@@ -27,9 +27,9 @@
     "servicios-web":{
         
     },
-    "contactar":{
+    "contact":{
         "title":"Contacta con nosotr@s para hacer tu página web",
         "description":"Todos los servicios, localidades, relacionado con el contacto",
-        "h1": "CONTACTA CON NOSOTR@S"
+        "h1": "CONTACT WITH US"
     }
 }

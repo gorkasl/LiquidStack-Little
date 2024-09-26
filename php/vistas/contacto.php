@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacta con nosotros</title>
-    <meta name="description" content="webda | Desarrollo de aplicaciones web nativas y en wordpress. Posicionamiento profesional SEO y campañas SEM. Imagen corporativa. Trabajamos en Gipuzkoa, Bizkaia y Araba">   
+    <title><?=$title?></title>
+    <meta name="description" content="<?=$description?>">   
     <link rel="stylesheet" href="<?=$_ENV['RAIZ']?>/assets/css/contacto.min.css?v=1.1">
     <script type="module" src="<?=$_ENV['RAIZ']?>/assets/js/app.js?v=1.1"></script>
    
@@ -20,6 +20,7 @@
     <?php include './php/includes/_nav.php'?>
 
     <header>
+        <h1><?=$h1?></h1>
     </header>
     <main>        
         <section>

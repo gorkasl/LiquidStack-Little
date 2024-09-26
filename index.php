@@ -13,7 +13,10 @@ $dotenv->load();
 
 //Desde el htaccess entramos aquí desde cualquier dirección URL del dominio. Aquí la recogemos íntegra (sólo lo que venga detrás del último / localhost), ya que venimos desde el localhost ejecutado desde php, en el puerto 3000.
 //descodificamos por si viene con ñ
-$url = urldecode($_SERVER["REQUEST_URI"]) ?? 'inicio';
+$url = urldecode($_SERVER["REQUEST_URI"]) ?? '/inicio';
+($url ="/") ? $url="/inicio" : $url;
+
+
 
 //--- CONTROLADOR (CONTROLAMOS QUÉ VISTA MOSTRAR EN FUNCIÓN DE LA URL)
 
@@ -28,10 +31,12 @@ if(isset($arrayRutas[$url])){
     $url_parse = explode("/",$url);
     //Guardamos el último item del array dentro la variable llamada $ruta
     $ruta = $url_parse[count($url_parse)-1]; 
-
     
 
     //Establecemos el lenguaje en castellano, por ejemplo, pero aquí vendría el lenguaje guardado en la cookie. En función del lenguaje, cargaremos un json u otro con los textos en ese idioma.
+    //todo el código relativo a saber si tiene cookie de idiomas activo
+    //cojo el valor de la cookie de idiomas, que puede ser "fr" "es" "en" "eu"
+    //lo meto en una variable
     $lang="es";
 
     //Venimos con un array asociativo con todo el contenido dinámico desde JSON o BBDD
@@ -47,7 +52,7 @@ if(isset($arrayRutas[$url])){
 
     // -- VISTA
     //Requerimos el archivo (vista) correspondiente a la url amigable solicitada 
-    require_once $arrayRutas[$url]; 
+    include $arrayRutas[$url];
 
 }else{    
 
