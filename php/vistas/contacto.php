@@ -42,8 +42,6 @@
             
             
         </section>
-
-
     </main>
     
     <?php include_once './php/includes/_footer.php'?>
