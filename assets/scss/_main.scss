@@ -1,4 +1,5 @@
 @use 'config';
+@use 'cookies';
 
 /* estilos de las cosas que aparezcan en TODAS las páginas de mi web, véase: nav, footer, y otros elementos como artículos que se usen casuísticamentre en todas las páginas. */
 
@@ -76,6 +77,7 @@
 #toggle:checked ~ nav .megamenu{
     height: 90vh;
     opacity: 1;
+    pointer-events: initial;
     overflow: scroll;
     &::-webkit-scrollbar {
         display: none;
@@ -120,10 +122,13 @@ nav{
     }    
 }
 .megamenu{
+    position: relative;
     width: 100%;
     height: 0;
     opacity: 0;
     overflow: hidden;
+    pointer-events: none;
+    user-select: none;
     padding: 4rem 1.5rem;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -150,7 +155,7 @@ nav{
             width: 90%;
         }
     }
-    >div{
+    .col{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -304,9 +309,27 @@ nav{
                 border-radius: 4px;
             }       
         }           
-    }         
+    }
+    .idiomas{
+        position: absolute;
+        left: 2rem;
+        bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        ul{
+            display: flex;
+            flex-direction: row;
+            column-gap: 2rem;
+            a:hover{
+                filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
+                -webkit-filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
+            }
+        }
+    }        
 }
 footer{
+    position: relative;
     padding-top: 15rem;
     padding-bottom: 6rem;
     display: flex;

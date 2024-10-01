@@ -1,0 +1,47 @@
+{
+    "links":{
+        "url0Text": "Hasiera",
+
+        "url1":"web-zerbitzuak",
+        "url1Text": "Web Zerbitzuak",
+
+        "url2":"kontaktatu",
+        "url2Text": "Kontaktatu"        
+    },
+    "inicio": {
+        "title": "WEBDA | Enpresentzako irtenbide digitalak",
+        "description": "Enpresentzako irtenbide digitalak: web garapen natiboa, SEO posizionamendua, SEM kanpainak, marketing digitala eta irudi korporatiboa.",
+        "h1": "Enpresentzako irtenbide digitalak"
+    },
+    "seo-posizionamendua": {
+        "title": "SEO POSIZIONAMENDUA",
+        "description": "SEO posizionamendurik onena zure webgunerako edo aplikaziorako. Web posizionamendu organikoan profesionalak gara.",
+        "h1": "Hau da SEO posizionamenduaren h1"
+    },
+    "aplikazio-multiplataforma": {
+        "title": "MULTIPLAFORMA APLIKAZIOEN GARAPENA",
+        "description": "Multiplataforma mugikorretarako aplikazioak garatzen ditugu. Behar duzuna, guk egingo dugu.",
+        "h1": "Hau da MULTIPLAFORMA APLIKAZIOEN h1"
+    },
+    "web-garapena-natiboa": {
+        "title": "WEB GARAPEN NATIBOA ETA WORDPRESS",
+        "description": "Web garapen natiboa eta WordPress (CMS) zerbitzuak eskaintzen ditugu. Garapen natiboak webguneak gaitasun eta errendimendu handiagoarekin esan nahi du. Zure beharra den tokira iristen gara."
+    },
+    "irudi-korporatibo-diseinua": {
+        "title": "IRUDI KORPORATIBOAREN DISEINUA",
+        "description": "Diseinu grafiko zerbitzu desberdinak eskaintzen ditugu."
+    },
+    "marketina-rrss-sem": {
+        "title": "MARKETING DIGITALA, RRSS ETA SEM KANPAINAK",
+        "description": "Zure SEM kanpaina, sare sozialak eta marketing korporatiboa kudeatzen ditugu zure bezero helburu guztietara iristeko."
+    },    
+    "web-zerbitzuak": {
+        "title": "Enpresentzako aplikazioen eta zerbitzu digitalen garapena",
+        "description": "Enpresentzako zerbitzu digitalak: web garapena, SEO posizionamendua, marketing kanpainak, irudi korporatiboa eta multiplataforma aplikazioak"
+    },
+    "kontaktatu": {
+        "title": "Kontaktatu gurekin zure webgunea egiteko",
+        "description": "Zerbitzu guztiak, kokapenak, kontaktuarekin lotuta",
+        "h1": "KONTAKTATU GUREKIN"
+    }
+}

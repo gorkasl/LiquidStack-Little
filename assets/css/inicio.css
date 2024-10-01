@@ -94,6 +94,142 @@ textarea {
   min-width: 100%;
 }
 
+.modal_cookies {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+  width: 500px;
+}
+.modal_cookies::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(29, 29, 29, 0.5);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: -100;
+  top: -90px;
+  left: -40px;
+}
+.modal_cookies::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(29, 29, 29, 0.5);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: -100;
+  bottom: -33px;
+  right: -58px;
+}
+.modal_cookies #cookies {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 20px;
+  background-color: rgb(63, 63, 63);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  color: white;
+  font-family: "spartan";
+  font-size: 0.8rem;
+}
+.modal_cookies #cookies p {
+  padding: 10px 20px 10px 20px;
+}
+.modal_cookies #cookies .cookies_elements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+}
+.modal_cookies #cookies .cookies_elements .cookies_botones {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.modal_cookies #cookies .cookies_elements .cookies_botones .btn_cookie {
+  cursor: pointer;
+  width: 130px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+.modal_cookies #cookies .cookies_elements .cookies_botones .btn_cookie:nth-child(1) {
+  background-color: rgb(37, 37, 37);
+}
+.modal_cookies #cookies .cookies_elements .cookies_botones .btn_cookie:nth-child(1):hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+.modal_cookies #cookies .cookies_elements .cookies_botones .btn_cookie:nth-child(2) {
+  background-color: rgb(37, 37, 37);
+}
+.modal_cookies #cookies .cookies_elements .cookies_botones .btn_cookie:nth-child(2):hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+.modal_cookies #cookies .cookies_elements a {
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.modal_cookies #cookies .cookies_elements a:visited {
+  color: inherit;
+}
+.modal_cookies #cookies .cookie_close {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 7px;
+  right: 7px;
+  opacity: 0.5;
+}
+.modal_cookies #cookies .cookie_close span:nth-child(1) {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(0deg);
+  transition: 0.2s;
+}
+.modal_cookies #cookies .cookie_close span:nth-child(2) {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(-90deg);
+  transition: 0.2s;
+}
+.modal_cookies #cookies .cookie_close:hover span:nth-child(1) {
+  transform: rotate(45deg);
+  transition: 0.2s;
+}
+.modal_cookies #cookies .cookie_close:hover span:nth-child(2) {
+  transform: rotate(-45deg);
+  transition: 0.2s;
+}
+
 /* estilos de las cosas que aparezcan en TODAS las páginas de mi web, véase: nav, footer, y otros elementos como artículos que se usen casuísticamentre en todas las páginas. */
 /* CLASES GLOBALES */
 .boton {
@@ -174,6 +310,7 @@ textarea {
 #toggle:checked ~ nav .megamenu {
   height: 90vh;
   opacity: 1;
+  pointer-events: initial;
   overflow: scroll;
 }
 #toggle:checked ~ nav .megamenu::-webkit-scrollbar {
@@ -220,10 +357,13 @@ nav a, nav p, nav span {
 }
 
 .megamenu {
+  position: relative;
   width: 100%;
   height: 0;
   opacity: 0;
   overflow: hidden;
+  pointer-events: none;
+  user-select: none;
   padding: 4rem 1.5rem;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -251,7 +391,7 @@ nav a, nav p, nav span {
     width: 90%;
   }
 }
-.megamenu > div {
+.megamenu .col {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -260,23 +400,23 @@ nav a, nav p, nav span {
   row-gap: 2rem;
 }
 @media only screen and (min-width: 800px) {
-  .megamenu > div {
+  .megamenu .col {
     width: 45%;
   }
 }
 @media only screen and (min-width: 1350px) {
-  .megamenu > div {
+  .megamenu .col {
     width: 30%;
     height: 250px;
     border-right: 2px solid white;
   }
 }
-.megamenu > div > p {
+.megamenu .col > p {
   font-size: 1.3rem;
   font-family: "spartan";
   letter-spacing: 2px;
 }
-.megamenu > div > ul {
+.megamenu .col > ul {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -284,7 +424,7 @@ nav a, nav p, nav span {
   justify-content: flex-start;
   row-gap: 1rem;
 }
-.megamenu > div > ul a {
+.megamenu .col > ul a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -295,16 +435,16 @@ nav a, nav p, nav span {
   -o-transition: 0.2s;
   -moz-transition: 0.2s;
 }
-.megamenu > div > ul a:hover {
+.megamenu .col > ul a:hover {
   filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
   -webkit-filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
 }
-.megamenu > div > ul img {
+.megamenu .col > ul img {
   width: 20px;
   filter: invert 1;
   -webkit-filter: invert(1);
 }
-.megamenu > div .boton {
+.megamenu .col .boton {
   padding: 0.7rem 1rem 0.5rem;
   font-size: 1rem;
   border-radius: 4px;
@@ -403,8 +543,26 @@ nav a, nav p, nav span {
   font-size: 1rem;
   border-radius: 4px;
 }
+.megamenu .idiomas {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.megamenu .idiomas ul {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+.megamenu .idiomas ul a:hover {
+  filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
+  -webkit-filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
+}
 
 footer {
+  position: relative;
   padding-top: 15rem;
   padding-bottom: 6rem;
   display: flex;

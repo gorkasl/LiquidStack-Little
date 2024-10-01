@@ -10,7 +10,7 @@
    
 
     <!-- metadatos de configuración -->
-    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- para que sea como una app en móvil -->
+    <meta name="mobile-web-app-capable" content="yes"> <!-- para que sea como una app en móvil -->
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta name="referrer" content="origin" >
     <link rel="canonical" href="<?=$_ENV['RAIZ']?>/<?=$ruta?>"> <!-- url hasta este archivo -->

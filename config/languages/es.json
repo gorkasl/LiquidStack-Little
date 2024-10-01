@@ -1,4 +1,18 @@
-{
+{    
+    "links":{
+        "url0Text": "Inicio",
+
+        "url1":"servicios-web",
+        "url1Text": "Servicios Web",
+
+        "url2":"contactar",
+        "url2Text": "Contacto"        
+    },
+    "inicio":{
+        "title": "WEBDA | Soluciones digitales para empresas",
+        "description":"Soluciones digitales para empresas: desarrollo nativo web, posicionamiento SEO, campañas SEM, marketing digital e imagen corporativa.",
+        "h1":"Soluciones digitales para empresa"
+    },
     "posicionamiento-seo":{
         "title": "POSICIONAMIENTO SEO",
         "description":"El mejor posicionamiento SEO para tu web o aplicación. Somos profesionales en posicionamiento web orgánico.",
@@ -21,11 +35,9 @@
         "title":"MARKETING DIGITAL, RRSS Y CAMPAÑAS SEM",
         "description":"Ofrecemos llevar tu campaña SEM, redes sociales y marketing corporativo para llevar tu empresa al conocimiento de todos tus clientes objetivo."
     },
-    "inicio":{
-        
-    },
     "servicios-web":{
-        
+        "title":"Desarrollo de aplicaciones y servicios digitales para empresas",
+        "description":"Servicios digitales para empresa: web, posicionamiento SEO, campañas marketing, diseño corporativo, aplicaciones multiplataforma"
     },
     "contactar":{
         "title":"Contacta con nosotr@s para hacer tu página web",

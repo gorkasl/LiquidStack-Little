@@ -1,35 +1,47 @@
 {
-    "posicionamiento-seo":{
-        "title": "POSICIONAMIENTO SEO",
-        "description":"El mejor posicionamiento SEO para tu web o aplicación. Somos profesionales en posicionamiento web orgánico.",
-        "h1": "Este es el h1 de posicionamiento SEO"
+    "links":{
+        "url0Text": "Home",
+
+        "url1":"web-services",
+        "url1Text": "Web Services",
+
+        "url2":"contact",
+        "url2Text": "Contact"        
     },
-    "aplicaciones-multiplataforma":{
-        "title":"DESARROLLO DE APLICACIONES MULTIPLATAFORMA",
-        "description":"Desarrollamos aplicaciones móviles multiplataforma. Qué necesitas, nosotros lo hacemos.",
-        "h1": "Este es el h1 de APP MULTIPLATAFORMAS"
+    "inicio": {
+        "title": "WEBDA | Digital solutions for businesses",
+        "description": "Digital solutions for businesses: native web development, SEO positioning, SEM campaigns, digital marketing, and corporate image.",
+        "h1": "Digital solutions for businesses"
     },
-    "desarrollo-web-nativo":{
-        "title":"DESARROLLO WEB NATIVO Y WORDPRESS",
-        "description":"Ofrecemos los servicios de desarrollo web nativo y en wordpress (CMS). El desarrollo natiuvo implica webs con más capacidad y rendimiento. Llegamos allí donde llegue tu necesidad."
+    "seo-positioning": {
+        "title": "SEO POSITIONING",
+        "description": "The best SEO positioning for your website or application. We are professionals in organic web positioning.",
+        "h1": "This is the SEO positioning h1"
     },
-    "diseño-imagen-corporativa":{
-        "title":"DISEÑO IMAGEN CORPORATIVA CORPORATIVO",
-        "description":"Ofrecemos diferentes servicios de diseño gráfico"
+    "multiplatform-applications": {
+        "title": "MULTIPLATFORM APPLICATION DEVELOPMENT",
+        "description": "We develop multiplatform mobile applications. Whatever you need, we make it happen.",
+        "h1": "This is the h1 for MULTIPLATFORM APPS"
     },
-    "marketing-rrss-sem":{
-        "title":"MARKETING DIGITAL, RRSS Y CAMPAÑAS SEM",
-        "description":"Ofrecemos llevar tu campaña SEM, redes sociales y marketing corporativo para llevar tu empresa al conocimiento de todos tus clientes objetivo."
+    "native-web-development": {
+        "title": "NATIVE WEB DEVELOPMENT AND WORDPRESS",
+        "description": "We offer native web development services and WordPress (CMS). Native development means websites with more capacity and performance. We meet all your needs."
     },
-    "inicio":{
-        
+    "corporate-image-design": {
+        "title": "CORPORATE IMAGE DESIGN",
+        "description": "We offer various graphic design services"
     },
-    "servicios-web":{
-        
+    "digital-marketing-rrss-sem": {
+        "title": "DIGITAL MARKETING, SOCIAL MEDIA, AND SEM CAMPAIGNS",
+        "description": "We manage your SEM campaign, social media, and corporate marketing to reach all your target customers."
+    },    
+    "web-services": {
+        "title": "Application and digital services development for businesses",
+        "description": "Digital services for businesses: web development, SEO positioning, marketing campaigns, corporate design, and multiplatform applications"
     },
-    "contact":{
-        "title":"Contacta con nosotr@s para hacer tu página web",
-        "description":"Todos los servicios, localidades, relacionado con el contacto",
-        "h1": "CONTACT WITH US"
+    "contact": {
+        "title": "Contact us to create your website",
+        "description": "All services, locations, related to contact",
+        "h1": "CONTACT US"
     }
 }

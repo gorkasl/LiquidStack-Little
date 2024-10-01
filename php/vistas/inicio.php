@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webda | diseño & apps & web posicionamiento SEO / SEM - Gipuzkoa</title>
-    <meta name="description" content="webda | Desarrollo de aplicaciones web nativas y en wordpress. Posicionamiento profesional SEO y campañas SEM. Imagen corporativa. Trabajamos en Gipuzkoa, Bizkaia y Araba">   
+    <title><?=$title?></title>
+    <meta name="description" content="<?=$description?>">
     <link rel="stylesheet" href="<?=$_ENV['RAIZ']?>/assets/css/inicio.min.css?v=1.1">
     <script type="module" src="<?=$_ENV['RAIZ']?>/assets/js/app.js?v=1.1"></script>
    
-    <!-- metadatos de configuración -->
-    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- para que sea como una app en móvil -->
+    <!-- metadatos de configuración -->    
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta name="referrer" content="origin" >
     <link rel="canonical" href="<?=$_ENV['RAIZ']?>/inicio"> <!-- url hasta este archivo -->
@@ -22,17 +22,7 @@
     <div id="smooth-wrapper">
         <div id="smooth-content">            
             <header>
-                <picture>
-                    <!-- avif -->
-                    <source
-                    type="image/avif"
-                    
-                    >
-                    <!-- webp -->
-                    <source
-                    type="image/webp"
-                    
-                    >
+                <picture>                    
                     <!-- jpg -->            
                     <img
                     src="https://dummyimage.com/800x500" width="" height="" alt="" title=""
@@ -44,7 +34,7 @@
                     500px"
                     >
                 </picture>
-                <h1>Encabezado principal</h1>
+                <h1><?=$h1?></h1>
                 <a href="" class="boton">CTA</a>
             </header>
             <main>
@@ -52,6 +42,7 @@
                 <section class="sect01">
                     <picture>
                         <img
+                        class="lad_cen_efect"
                         src="https://dummyimage.com/200x200" width="" height="" alt="" title=""
                         srcset="
                         https://dummyimage.com/800x500 800w,
