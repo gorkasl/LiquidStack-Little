@@ -11,7 +11,11 @@
     "inicio": {
         "title": "WEBDA | Enpresentzako irtenbide digitalak",
         "description": "Enpresentzako irtenbide digitalak: web garapen natiboa, SEO posizionamendua, SEM kanpainak, marketing digitala eta irudi korporatiboa.",
-        "h1": "Enpresentzako irtenbide digitalak"
+        "h1": "Enpresentzako irtenbide digitalak",
+        "txt1":"Kaixo h2",
+        "boton1":"Informazio geio",
+        "txt_02":"Versión del loren en EUSKERA",
+        "txt_03":"Versión del loren en EUSKERA"
     },
     "seo-posizionamendua": {
         "title": "SEO POSIZIONAMENDUA",

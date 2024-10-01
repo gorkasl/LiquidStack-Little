@@ -11,7 +11,11 @@
     "inicio":{
         "title": "WEBDA | Soluciones digitales para empresas",
         "description":"Soluciones digitales para empresas: desarrollo nativo web, posicionamiento SEO, campañas SEM, marketing digital e imagen corporativa.",
-        "h1":"Soluciones digitales para empresa"
+        "h1":"Soluciones digitales para empresa",
+        "txt1":"Encabezado h2 hola",
+        "boton1":"Más Info",
+        "txt_02":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae consequuntur consequatur minus ratione, excepturi magnam rem beatae quis",
+        "txt_03":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis in ipsam at minima necessitatibus sapiente sequi dicta nam magnam blanditiis."
     },
     "posicionamiento-seo":{
         "title": "POSICIONAMIENTO SEO",

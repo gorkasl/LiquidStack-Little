@@ -3,7 +3,7 @@
 import "./_scroll.js";
 
 import cookieClass from "./_cookies.js";
-const cookie=cookieClass.getInstance();
+const cookie = cookieClass.getInstance();
 
 import "./_lang.js";
 

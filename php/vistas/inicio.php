@@ -35,7 +35,7 @@
                     >
                 </picture>
                 <h1><?=$h1?></h1>
-                <a href="" class="boton">CTA</a>
+                <a href="" class="boton"><?=$boton1?></a>
             </header>
             <main>
                 <!-- quienes somos -->
@@ -55,9 +55,9 @@
                         >
                     </picture>
                     <div>
-                        <h2>Encabezado de sección h2</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae consequuntur consequatur minus ratione, excepturi magnam rem beatae quis </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis in ipsam at minima necessitatibus sapiente sequi dicta nam magnam blanditiis.</p>
+                        <h2><?=$txt1?></h2>
+                        <p><?=$txt_02?></p>
+                        <p><?=$txt_03?></p>
                         <a href="#" class="boton">CTA</a>
                     </div>            
                 </section>
