@@ -14,7 +14,7 @@ require_once './php/app/_idiomas.php'; //requerimos para obtener el lenguaje
 
 //Obtenemos la url entera desde la raiz
 $url = urldecode($_SERVER["REQUEST_URI"]) ?? "/$lang";
-$url = ($url ==="/$lang") ? "/$lang" : $url;
+$url = ($url ==="/") ? "/$lang" : $url;
 
 //Si no están aceptadas las cookies, no hay idioma guardado, por lo que haremos pri a la url que venga
 
