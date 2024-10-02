@@ -9,6 +9,7 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable('./');
 $dotenv->load();
 
+//Aquí analizamos la url y otorgamos el idioma en función de varios aspectos
 require_once './php/app/url.php'; //$langs[], $lang, $url, $ruta
 
 //----CONTROLADOR (CONTROLAMOS QUÉ VISTA MOSTRAR EN FUNCIÓN DE LA URL)

@@ -1,5 +1,12 @@
 <?php
 
+//Este archivo se encargará de dos cosas:
+//Limpiar la URL y hacer redirecciones en caso necesario
+//Obtener la información de la URL como el idioma y la ruta final
+//Decidir qué idioma carga por defecto: cookie, navegador o el de la variable de entorno
+//En caso de que venga un idioma diferente en la URL a la anterior decisión, cambiará el idioma al de la URL
+
+
 $langs= require('./config/langs.php'); //array de idiomas permitidos
 
 //Establecemos $lang inicialmente por navegador, cookie o por defecto 
@@ -22,8 +29,6 @@ if(!isset($_COOKIE['lang'])){
 $url = urldecode($_SERVER["REQUEST_URI"]) ?? "/$lang";
 $url = ($url ==="/") ? "/$lang" : rtrim($url,"/");
 
-//fr
-
 //Estructuramos la URL en un array
 $urlParse = explode("/",$url);
 $urlLang = $urlParse[1]; //Cogemos el idioma de la URL
@@ -33,11 +38,14 @@ $ruta = $urlParse[count($urlParse)-1]; //cogemos la última parte de la ruta
 if(in_array($urlLang, $langs)){
     $lang=$urlLang;
 }else{
+    header("HTTP/1.1 301 Moved Permanently");
     header("Location: /$lang");
     exit;
 }
 
+//En caso de que la url "/" y $url sea "/idioma" entonces hace redirección 
 if(urldecode($_SERVER["REQUEST_URI"]) !== $url){
+    header("HTTP/1.1 301 Moved Permanently");
     header("Location:$url");
     exit;
 }
