@@ -12,51 +12,45 @@ $dotenv->load();
 
 require_once './php/app/_idiomas.php'; //requerimos para obtener el lenguaje
 
-
-//Obtenemos la url entera desde la raiz
+//Obtenemos la url entera desde la raiz del dominio
 $url = urldecode($_SERVER["REQUEST_URI"]) ?? "/$lang";
-
 $url = ($url ==="/") ? "/$lang" : $url;
 
 
-
-//Si no están aceptadas las cookies, no hay idioma guardado, por lo que haremos pri a la url que venga
-
-// if(!$_COOKIE["aceptarCookies"]){
-    
-// }
-
 //----CONTROLADOR (CONTROLAMOS QUÉ VISTA MOSTRAR EN FUNCIÓN DE LA URL)
-//--------------------------------------------------------------------
+
 $arrayRutas = require('./config/rutas.php');
-if(isset($arrayRutas[$url])){
+if(isset($arrayRutas[$url])){    
     
-    
-    //nos quedamos con la última ruta de la url para buscar en el json correspondiente
-    $url_parse = explode("/",$url);
-    $ruta = $url_parse[count($url_parse)-1];
+    //Estructuramos la URL en un array
+    $urlParse = explode("/",$url);
+    $urlLang = $urlParse[1]; //Cogemos el idioma de la URL
+    $ruta = $urlParse[count($urlParse)-1]; //cogemos la última parte de la ruta
 
-    
-
-    if (($ruta == "es" || "en" || "eu")){
+    //Pisamos $lang con el idioma de la url
+    $langs= require('./config/langs.php');
+    if(in_array($urlLang, $langs)){
+        $lang=$urlLang;
+    }
+   
+    //Si $ruta es la base de la url, /es, /eu, establecemos que $ruta sea inicio
+    //Así carga las claves-valor de la url de inicio del json
+    if(in_array($ruta, $langs)){
         $ruta = "inicio";
     }
 
-
-    //extraemos del json todas las claves valores de esa ruta, ya en variables php
+    //Extraemos del json todas las claves valores de esa ruta, ya en variables php
     $data=(array) json_decode(file_get_contents("./config/languages/$lang.json"));
     $data[$ruta] && extract((array)$data[$ruta]);
-    //tambien extraemos de la clave links, para disponer de los enlaces en diferentes idiomas para el menú
-    $data["links"] && extract((array)$data["links"]);
+    //tambien extraemos de la clave 'global', para disponer de los enlaces en diferentes idiomas para elementos comunes a toda la web como el menú o footer 
+    $data["global"] && extract((array)$data["global"]);
 
     //----VISTA----------
-    //-------------------
     require_once $arrayRutas[$url];
 
 }else{
 
     //----VISTA----------
-    //-------------------
     require './php/vistas/404.php'; 
 }
 ?>
