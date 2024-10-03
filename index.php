@@ -1,6 +1,6 @@
 <?php
 
-//ARCHIVO ROUTER O DE CONFIGURACIÓN
+//ARCHIVO ROUTER O DE CONFIGURACIÓN  
 //---------------------------------
 
 
