@@ -13,6 +13,10 @@ return[
     '/en/web-services' => './php/vistas/servicios.php',
     '/eu/web-zerbitzuak' => './php/vistas/servicios.php',
 
+    '/es/casos-de-exito' => './php/vistas/expertise.php',
+    '/en/success-stories' => './php/vistas/expertise.php',
+    '/eu/arrakasta-istorioak' => './php/vistas/expertise.php',
+
     '/es/servicios-web/posicionamiento-seo' => './php/vistas/servicio.php',
     '/es/servicios-web/aplicaciones-multiplataforma' => './php/vistas/servicio.php',
     '/es/servicios-web/desarrollo-web-nativo' => './php/vistas/servicio.php',

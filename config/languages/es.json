@@ -6,7 +6,10 @@
         "url1Text": "Servicios Web",
 
         "url2":"contactar",
-        "url2Text": "Contacto"        
+        "url2Text": "Contacto",    
+        
+        "url3":"casos-de-exito",
+        "url3Text": "Casos de éxito" 
     },
     "inicio":{
         "title": "WEBDA | Soluciones digitales para empresas",
@@ -47,5 +50,10 @@
         "title":"Contacta con nosotr@s para hacer tu página web",
         "description":"Todos los servicios, localidades, relacionado con el contacto",
         "h1": "CONTACTA CON NOSOTR@S"
+    },
+    "casos-de-exito":{
+        "title":"Casos de éxito para hacer tu página web",
+        "description":"Todos los proyectos, relacionado con el éxito",
+        "h1": "CASOS DE ÉXITO"
     }
 }

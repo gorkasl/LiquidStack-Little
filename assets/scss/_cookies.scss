@@ -11,7 +11,8 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        background-color: config.$color01rgba;
+        background-color: config.$color01rgba;        
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         position: absolute;
         z-index: -100;
@@ -23,7 +24,8 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        background-color: config.$color01rgba;
+        background-color: config.$color01rgba;        
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         position: absolute;
         z-index: -100;
@@ -38,7 +40,8 @@
         justify-content: center;
         row-gap: 10px;
         padding: 20px;
-        background-color: config.$color01;
+        background-color: config.$color01;        
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         border-radius: 10px;
         color: config.$color00;

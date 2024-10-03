@@ -107,7 +107,8 @@ textarea {
   height: 150px;
   border-radius: 50%;
   background-color: rgba(29, 29, 29, 0.5);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   position: absolute;
   z-index: -100;
   top: -90px;
@@ -119,7 +120,8 @@ textarea {
   height: 100px;
   border-radius: 50%;
   background-color: rgba(29, 29, 29, 0.5);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   position: absolute;
   z-index: -100;
   bottom: -33px;
@@ -134,7 +136,8 @@ textarea {
   row-gap: 10px;
   padding: 20px;
   background-color: rgb(63, 63, 63);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border-radius: 10px;
   color: white;
   font-family: "spartan";
@@ -158,7 +161,8 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .modal_cookies #cookies .cookies_elements .cookies_botones .btn_cookie {
   cursor: pointer;
@@ -363,7 +367,9 @@ nav a, nav p, nav span {
   opacity: 0;
   overflow: hidden;
   pointer-events: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding: 4rem 1.5rem;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -429,7 +435,8 @@ nav a, nav p, nav span {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
@@ -454,7 +461,8 @@ nav a, nav p, nav span {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   position: relative;
   cursor: pointer;
   color: white;
@@ -508,7 +516,8 @@ nav a, nav p, nav span {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 .megamenu > :nth-child(2) .rrss img {
   width: 3rem;
@@ -554,7 +563,8 @@ nav a, nav p, nav span {
 .megamenu .idiomas ul {
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 .megamenu .idiomas ul a:hover {
   filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
@@ -634,4 +644,4 @@ footer > :nth-child(3) {
 .header01 > :nth-child(2) h1 {
   width: 100%;
   text-align: left;
-}/*# sourceMappingURL=servicio.css.map */
+}

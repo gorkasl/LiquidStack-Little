@@ -6,7 +6,10 @@
         "url1Text": "Web Services",
 
         "url2":"contact",
-        "url2Text": "Contact"        
+        "url2Text": "Contact",    
+        
+        "url3":"success-stories",
+        "url3Text": "Success stories"         
     },
     "inicio": {
         "title": "WEBDA | Digital solutions for businesses",
@@ -47,5 +50,10 @@
         "title": "Contact us to create your website",
         "description": "All services, locations, related to contact",
         "h1": "CONTACT US"
+    },
+    "success-stories":{
+        "title":"Success stories to make your website",
+        "description":"All projects, related to success",
+        "h1": "SUCCES STORIES"
     }
 }
