@@ -1,6 +1,6 @@
 <div class="megamenu">
     <div class="col">
-        <p>Contenido de esta web</p>
+        <p><?=$col1?></p>
         <ul>
             <li>
                 <a href="<?=$_ENV['RAIZ']."/".$lang?>">
@@ -63,18 +63,18 @@
         </ul>
     </div>
     <div class="col">
-        <p>Otros servicios</p>
+    <p><?=$col2?></p>
         <ul>
             <li>
                 <a href="https://infoda.eus/">
                     <img src="<?=$_ENV['RAIZ']?>/assets/img/chevron-forward-outline.svg" alt="">
-                    <span>infoda | Formación y empleo en Euskal Herria</span>
+                    <span><?=$col2a?></span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <img src="<?=$_ENV['RAIZ']?>/assets/img/chevron-forward-outline.svg" alt="">
-                    <span>orduda | Aplicación de fichajes y conciliación laboral</span>
+                    <span><?=$col2b?></span>
                 </a>
             </li>                    
         </ul>
@@ -89,7 +89,7 @@
         </div>
     </div>
     <div class="col">
-        <p>Contacto</p>
+    <p><?=$col3?></p>
         <ul>
             <li>
                 <a href="mailto:aranaz@gmail.com">

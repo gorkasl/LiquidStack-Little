@@ -364,14 +364,11 @@ nav a, nav p, nav span {
   opacity: 0;
   overflow: hidden;
   pointer-events: none;
+  -webkit-user-select: none;
   -moz-user-select: none;
        user-select: none;
-  -webkit-user-select: none;
   padding: 4rem 1.5rem;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  -moz-transition: 0.5s;
   background-color: rgb(63, 63, 63);
   position: absolute;
   top: 10vh;
@@ -435,18 +432,13 @@ nav a, nav p, nav span {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
   transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  -moz-transition: 0.2s;
 }
 .megamenu .col > ul a:hover {
   filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
-  -webkit-filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
 }
 .megamenu .col > ul img {
   width: 20px;
-  filter: invert 1;
-  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 .megamenu .col .boton {
   padding: 0.7rem 1rem 0.5rem;
@@ -492,8 +484,8 @@ nav a, nav p, nav span {
 .megamenu > :nth-child(1) > ul > li > div .submenu ul {
   padding: 2rem;
   border-radius: 1rem;
-  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   background-color: rgb(37, 37, 37);
   display: flex;
   flex-direction: column;
@@ -519,15 +511,10 @@ nav a, nav p, nav span {
 .megamenu > :nth-child(2) .rrss img {
   width: 3rem;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  -moz-transition: 0.5s;
   filter: invert(1);
-  -webkit-filter: invert(1);
 }
 .megamenu > :nth-child(2) .rrss img:hover {
   filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
-  -webkit-filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
 }
 .megamenu > :nth-child(3) {
   border-right: none;
@@ -565,7 +552,6 @@ nav a, nav p, nav span {
 }
 .megamenu .idiomas ul a:hover {
   filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
-  -webkit-filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
 }
 
 footer {
@@ -581,6 +567,7 @@ footer {
   background: linear-gradient(0deg, rgb(37, 37, 37) 0%, rgb(63, 63, 63) 100%);
 }
 footer .megamenu {
+  pointer-events: initial;
   height: 100%;
   opacity: 1;
   overflow: scroll;
@@ -594,6 +581,9 @@ footer .megamenu {
   }
 }
 footer .megamenu::-webkit-scrollbar {
+  display: none;
+}
+footer .megamenu .idiomas {
   display: none;
 }
 footer > :nth-child(3) {

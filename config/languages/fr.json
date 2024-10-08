@@ -1,7 +1,6 @@
 {
     "global": {
         "url0Text": "Accueil",
- 
         "url1": "services-web",
         "url1Text": "Services Web",
         "url1a":"services-web/positionnement-seo",
@@ -20,7 +19,16 @@
         "url2Text": "Contact",
  
         "url3": "histoires-de-succes",
-        "url3Text": "Histoires de succès"
+        "url3Text": "Histoires de succès",
+
+        "col1":"Contenu de ce site Web",
+
+        "col2": "Autres prestations",
+        "col2a": "infoda | Formation et emploi en Euskal Herria",
+        "col2b": "orduda | Demande de mutation et condition d'emploi",
+
+        "col3": "Contact"
+
     },
     "inicio": {
         "title": "WEBDA | Solutions numériques pour les entreprises",

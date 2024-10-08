@@ -127,14 +127,14 @@ nav{
     height: 0;
     opacity: 0;
     overflow: hidden;
-    pointer-events: none; 
-    user-select: none;
+    pointer-events: none;
     -webkit-user-select: none;
+    user-select: none; 
     padding: 4rem 1.5rem;
-    transition: 0.5s;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     -moz-transition: 0.5s;
+    transition: 0.5s;
     background-color: config.$color01;
     position: absolute;
     top: 10vh;
@@ -189,20 +189,20 @@ nav{
                 justify-content: flex-start;
                 align-items: center;
                 column-gap: 1.5rem;
-                transition: 0.2s;
                 -webkit-transition: 0.2s;
                 -o-transition: 0.2s;
                 -moz-transition: 0.2s;  
-                &:hover{
-                    filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
+                transition: 0.2s;
+                &:hover{                    
                     -webkit-filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
+                    filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
                 } 
             }
             img{
                 width: 20px;
-                filter: invert
-                (1);
-                -webkit-filter: invert(1);                                       
+                -webkit-filter: invert(1);  
+                filter: invert(1);
+                                                     
             }
         }            
         .boton{
@@ -249,9 +249,9 @@ nav{
                         overflow: hidden;                        
                         ul{
                             padding: 2rem;
-                            border-radius: 1rem;
+                            border-radius: 1rem;                            
+                            -webkit-backdrop-filter: blur(5px);
                             backdrop-filter: blur(5px);
-                            -webkit-backdrop-filter: blur(5px);;
                             background-color: config.$color01bis;
                             display: flex;
                             flex-direction: column;
@@ -278,15 +278,15 @@ nav{
             column-gap: 2rem;
             img{
                 width: 3rem;
-                transition: 0.5s;
                 -webkit-transition: 0.5s;
                 -o-transition: 0.5s;
-                -moz-transition: 0.5s;
-                filter: invert(1);
+                -moz-transition: 0.5s;                
+                transition: 0.5s;               
                 -webkit-filter: invert(1);
-                &:hover{
-                    filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
+                filter: invert(1);
+                &:hover{                    
                     -webkit-filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
+                    filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
                 }                    
             }
         }
@@ -322,9 +322,9 @@ nav{
             display: flex;
             flex-direction: row;
             column-gap: 2rem;
-            a:hover{
-                filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
+            a:hover{                
                 -webkit-filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
+                filter: invert(45%) sepia(56%) saturate(683%) hue-rotate(302deg) brightness(92%) contrast(95%);
             }
         }
     }        
@@ -341,6 +341,7 @@ footer{
     background: config.$color01;
     background: linear-gradient(0deg, config.$color01bis 0%, config.$color01 100%);
     .megamenu{
+        pointer-events: initial;
         height: 100%;
         opacity: 1;
         overflow: scroll;
@@ -353,6 +354,9 @@ footer{
             }
         }
         &::-webkit-scrollbar {
+            display: none;
+        }
+        .idiomas{
             display: none;
         }
     }

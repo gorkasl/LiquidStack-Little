@@ -1,7 +1,6 @@
 {
     "global":{
         "url0Text": "Hasiera",
-
         "url1":"web-zerbitzuak",
         "url1Text": "Web Zerbitzuak",
         "url1a":"web-zerbitzuak/seo-posizionamendua",
@@ -20,7 +19,14 @@
         "url2Text": "Kontaktatu",    
         
         "url3":"arrakasta-istorioak",
-        "url3Text": "Arrakasta istorioak"   
+        "url3Text": "Arrakasta istorioak",
+        
+        "col1":"Webgune honen edukia",
+        "col2": "Beste zerbitzu batzuk",
+        "col2a": "infoda | Prestakuntza eta enplegua Euskal Herrian",
+        "col2b": "orduda | Eskualdaketa eskaera eta lan-baldintza",
+        "col3": "Kontaktua"
+
         
     },
     "inicio": {

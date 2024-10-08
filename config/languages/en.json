@@ -20,7 +20,16 @@
         "url2Text": "Contact",    
         
         "url3":"success-stories",
-        "url3Text": "Success stories"         
+        "url3Text": "Success stories",
+        
+        "col1":"Content of this website",
+
+        "col2": "Other services",
+        "col2a": "infoda | Training and employment in Euskal Herria",
+        "col2b": "orduda | Transfer application and employment condition",
+
+        "col3": "Contact"
+
     },
     "inicio": {
         "title": "WEBDA | Digital solutions for businesses",
