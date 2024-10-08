@@ -1,0 +1,70 @@
+{
+    "global": {
+        "url0Text": "Accueil",
+ 
+        "url1": "services-web",
+        "url1Text": "Services Web",
+        "url1a":"services-web/positionnement-seo",
+        "url1aText": "Positionnement SEO",
+        "url1b":"services-web/applications-multiplateformes",
+        "url1bText": "Applications multiplateformes",
+        "url1c":"services-web/developpement-web-natif",
+        "url1cText": "Developpement web natif",
+        "url1d":"services-web/conception-image-corporative",
+        "url1dText": "Conception image corporative",
+        "url1f":"services-web/marketing-numerique-rrss-sem",
+        "url1fText": "Marketing numerique, RRSS, SEM",
+
+ 
+        "url2": "contact",
+        "url2Text": "Contact",
+ 
+        "url3": "histoires-de-succes",
+        "url3Text": "Histoires de succès"
+    },
+    "inicio": {
+        "title": "WEBDA | Solutions numériques pour les entreprises",
+        "description": "Solutions numériques pour les entreprises : développement web natif, positionnement SEO, campagnes SEM, marketing numérique et image de marque.",
+        "h1": "Solutions numériques pour les entreprises",
+        "txt1": "Bonjour, en-tête h2",
+        "boton1": "Plus d'infos",
+        "txt_02": "Version du lorem en ANGLAIS",
+        "txt_03": "Version du lorem en ANGLAIS"
+    },
+    "positionnement-seo": {
+        "title": "POSITIONNEMENT SEO",
+        "description": "Le meilleur positionnement SEO pour votre site web ou application. Nous sommes des professionnels du positionnement web organique.",
+        "h1": "Ceci est le h1 du positionnement SEO"
+    },
+    "applications-multiplateformes": {
+        "title": "DÉVELOPPEMENT D'APPLICATIONS MULTIPLATEFORMES",
+        "description": "Nous développons des applications mobiles multiplateformes. Tout ce dont vous avez besoin, nous le réalisons.",
+        "h1": "Ceci est le h1 des APPS MULTIPLATEFORMES"
+    },
+    "developpement-web-natif": {
+        "title": "DÉVELOPPEMENT WEB NATIF ET WORDPRESS",
+        "description": "Nous offrons des services de développement web natif et WordPress (CMS). Le développement natif signifie des sites web avec plus de capacité et de performance. Nous répondons à tous vos besoins."
+    },
+    "conception-image-corporative": {
+        "title": "CONCEPTION D'IMAGE CORPORATIVE",
+        "description": "Nous offrons divers services de conception graphique."
+    },
+    "marketing-numerique-rrss-sem": {
+        "title": "MARKETING NUMÉRIQUE, RÉSEAUX SOCIAUX ET CAMPAGNES SEM",
+        "description": "Nous gérons votre campagne SEM, vos réseaux sociaux et votre marketing corporatif pour atteindre tous vos clients cibles."
+    },
+    "services-web": {
+        "title": "Développement d'applications et de services numériques pour les entreprises",
+        "description": "Services numériques pour les entreprises : développement web, positionnement SEO, campagnes marketing, conception corporative et applications multiplateformes"
+    },
+    "contact": {
+        "title": "Contactez-nous pour créer votre site web",
+        "description": "Tous les services, localisations, en lien avec le contact",
+        "h1": "CONTACTEZ-NOUS"
+    },
+    "cas-de-succes": {
+        "title": "Cas de succès en développement web, SEO et conception corporative",
+        "description": "Découvrez les projets de nos clients",
+        "h1": "CAS DE SUCCÈS"
+    }  
+}

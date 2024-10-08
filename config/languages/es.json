@@ -4,6 +4,16 @@
 
         "url1":"servicios-web",
         "url1Text": "Servicios Web",
+        "url1a":"servicios-web/posicionamiento-seo",
+        "url1aText": "Posicionamiento SEO",
+        "url1b":"servicios-web/aplicaciones-multiplataforma",
+        "url1bText": "Aplicaciones Multiplataforma",
+        "url1c":"servicios-web/desarrollo-web-nativo",
+        "url1cText": "Desarrollo Web Nativo",
+        "url1d":"servicios-web/diseño-imagen-corporativa",
+        "url1dText": "Diseño de Imagen Corporativa",
+        "url1f":"servicios-web/marketing-rrss-sem",
+        "url1fText": "Marketing, RRSS y SEM",
 
         "url2":"contactar",
         "url2Text": "Contacto",    

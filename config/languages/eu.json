@@ -4,12 +4,24 @@
 
         "url1":"web-zerbitzuak",
         "url1Text": "Web Zerbitzuak",
+        "url1a":"web-zerbitzuak/seo-posizionamendua",
+        "url1aText": "SEO posizionamendua",
+        "url1b":"web-zerbitzuak/aplikazio-multiplataforma",
+        "url1bText": "Multiplataforma aplikazioen garapena",
+        "url1c":"web-zerbitzuak/web-garapena-natiboa",
+        "url1cText": "Web garapena eta CMS natiboak",
+        "url1d":"web-zerbitzuak/irudi-korporatibo-diseinua",
+        "url1dText": "Web garapen natiboa eta wordpress",
+        "url1f":"web-zerbitzuak/marketina-rrss-sem",
+        "url1fText": "Marketing digitala, RRSS eta SEM kanpainak",
+
 
         "url2":"kontaktatu",
         "url2Text": "Kontaktatu",    
         
         "url3":"arrakasta-istorioak",
-        "url3Text": "Arrakasta istorioak"         
+        "url3Text": "Arrakasta istorioak"   
+        
     },
     "inicio": {
         "title": "WEBDA | Enpresentzako irtenbide digitalak",

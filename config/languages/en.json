@@ -4,6 +4,17 @@
 
         "url1":"web-services",
         "url1Text": "Web Services",
+        "url1a":"web-services/seo-positioning",
+        "url1aText": "SEO positioning",
+        "url1b":"web-services/multiplatform-applications",
+        "url1bText": "Multiplatform applications",
+        "url1c":"web-services/native-web-development",
+        "url1cText": "Native web development",
+        "url1d":"web-services/corporate-image-design",
+        "url1dText": "Corporate image design",
+        "url1f":"web-services/digital-marketing-rrss-sem",
+        "url1fText": "Digital marketing, RRSS and SEM",
+
 
         "url2":"contact",
         "url2Text": "Contact",    
